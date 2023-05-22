@@ -21,4 +21,11 @@ class Cursos extends Conexion{
 
     }
 
+    //Guardamos los datos con la funcion guardar, todo en nuestra base de datos.
+    public function guardar(){
+        $sql = "INSERT INTO cursos(nombre_curso, cantidad_periodos, modulo_impartido, nombre_instructor, creditos_curso) values('$this->nombre_curso','$this->cantidad_periodos','$this->modulo_impartido','$this->nombre_instructor','$this->creditos_curso')";
+        //Y la ejecutamos con la funcion ejecutar del archivo Conexion.
+        $resultado = self::ejecutar($sql);
+        return $resultado;
+    }
 }
