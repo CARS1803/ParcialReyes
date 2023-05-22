@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="text-center">Formulario de Informacion Cursos</h1>
+        <br><br><h1 class="text-center">Formulario de Informacion Cursos</h1><br><br>
         <div class="row justify-content-center">
             <!-- Creacion de la primer entrada de datos y usando la ruta donde se guardara la informacion en nuestra BD. -->
             <form action="/ParcialReyes/controladores/guardar.php" method="POST" class="col-lg-8 border bg-light p-3">
@@ -45,7 +45,7 @@
                 <div class="row mb-3">
                     <div class="col">
                         <label for="correo">creditos_curso</label>
-                        <input type="decimal" name="creditos_curso" id="creditos_curso" class="form-control">
+                        <input type="number" name="creditos_curso" id="creditos_curso" class="form-control">
                     </div>
                 </div>
                 <!-- boton de enviado de datos. -->
