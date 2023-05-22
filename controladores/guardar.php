@@ -1,9 +1,22 @@
 <?php
 //Aca se usa el requiere para indicar que se va a agragar el archivo Cursos.php
 require '../../modelos/Cursos.php';
+
+//Colocamos un TRY que sirve para poner en alerta al programa sobre el código que puede lanzar una excepción.
+//tambien colocaremos un catch que sirve para capturar y manejar cada excepción que se lance.
+try {
+    $curso = new Curso($_POST);
+    $resultado = $curso->guardar();
+    $error = "NO se guardó correctamente los datos";
+} catch (PDOException $e) {
+    $error = $e->getMessage();
+} catch (Exception $e2){
+    $error = $e1->getMessage();
+}
+
 ?>
-<!--Aca se genero la estructura para generar codigo html para que le indique al usuario si algo salio mal 
-al guardar los datos -->
+<!-- Aca se genero la estructura html para idicar al usuario si algo sale mal al
+guardar la informacion. -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
