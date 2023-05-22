@@ -41,6 +41,13 @@
                         <input type="text" name="nombre_instructor" id="nombre_instructor" class="form-control">
                     </div>
                 </div>
+                <!-- Creaacion de la quinta entrada de datos -->
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="correo">creditos_curso</label>
+                        <input type="decimal" name="creditos_curso" id="creditos_curso" class="form-control">
+                    </div>
+                </div>
                 
             </form>
         </div>
