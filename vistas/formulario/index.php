@@ -34,6 +34,13 @@
                         <input type="number" name="modulo_impartido" id="modulo_impartido" class="form-control">
                     </div>
                 </div>
+                <!-- Creaacion de la cuarta entrada de datos -->
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="telefono">Nombres del Instructor encargado</label>
+                        <input type="text" name="nombre_instructor" id="nombre_instructor" class="form-control">
+                    </div>
+                </div>
                 
             </form>
         </div>
