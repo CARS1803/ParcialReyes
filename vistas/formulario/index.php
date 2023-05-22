@@ -27,6 +27,13 @@
                         <input type="number" name="cantidad_periodos" id="cantidad_periodos" class="form-control">
                     </div>
                 </div>
+                <!-- Creaacion de la tercera entrada de datos -->
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="fecha_de_nacimiento">Modulo en que se imparte</label>
+                        <input type="number" name="modulo_impartido" id="modulo_impartido" class="form-control">
+                    </div>
+                </div>
                 
             </form>
         </div>
