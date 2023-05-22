@@ -20,6 +20,13 @@
                         <input type="text" name="nombre_curso" id="nombre_curso" class="form-control">
                     </div>
                 </div>
+                <!-- Creaacion de la segunda entrada de datos -->
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="apellido">Cantidad de periodos</label>
+                        <input type="number" name="cantidad_periodos" id="cantidad_periodos" class="form-control">
+                    </div>
+                </div>
                 
             </form>
         </div>
