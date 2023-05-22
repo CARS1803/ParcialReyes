@@ -20,4 +20,15 @@ abstract class Conexion{
         return self::$conexion;
     }
 
-    
+    public static function ejecutar($sql){
+        // Conectamos la base de datos con el metodo conectar.
+        self::conectar();
+        // Creamos una sentencia y la ejecutamos.
+        $sentencia = self::$conexion->prepare($sql);
+        $resultado = $sentencia->execute();
+        // Cerramos la conexion y devolvemos un resutaldo.
+        self::$conexion = null;
+        return $resultado;
+    }
+
+}
