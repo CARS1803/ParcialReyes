@@ -14,6 +14,7 @@ try {
     $error = $e1->getMessage();
 }
 
+
 ?>
 <!-- Aca se genero la estructura html para idicar al usuario si algo sale mal al
 guardar la informacion. -->
@@ -27,8 +28,28 @@ guardar la informacion. -->
     <title>Guardado de datos</title>
 </head>
 <body>
-
+<center>
+    <!-- Aca generamos html para idicar al usuario si todo salio bien o hubo error al guardar datos -->
+<div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <?php if($resultado): ?>
+                    <div class="alert alert-success" role="alert">
+                        Los datos se Guardaron con Exito!
+                    </div>
+                <?php else :?>
+                    <div class="alert alert-danger" role="alert">
+                        Ocurrió un error: <?= $error ?>
+                    </div>
+                <?php endif ?>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <a href="/ParcialReyes/vistas/formulario/index.php" class="btn btn-info">Volver al formulario</a>
+            </div>
+        </div>
+    </div>
+</center>
 </body>
 </html>
-
-
