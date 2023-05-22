@@ -48,7 +48,12 @@
                         <input type="decimal" name="creditos_curso" id="creditos_curso" class="form-control">
                     </div>
                 </div>
-                
+                <!-- boton de enviado de datos. -->
+                <div class="row mb-3">
+                    <div class="col">
+                        <button type="submit" class="btn btn-primary w-100">Guardar</button>
+                    </div>
+                </div>
             </form>
         </div>
     </div>
