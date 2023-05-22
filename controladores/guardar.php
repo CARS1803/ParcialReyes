@@ -1,6 +1,6 @@
 <?php
 //Aca se usa el requiere para indicar que se va a agragar el archivo Cursos.php
-require '../../modelos/Cursos.php';
+require '../modelos/Cursos.php';
 
 //Colocamos un TRY que sirve para poner en alerta al programa sobre el código que puede lanzar una excepción.
 //tambien colocaremos un catch que sirve para capturar y manejar cada excepción que se lance.
